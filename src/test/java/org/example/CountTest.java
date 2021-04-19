@@ -1,12 +1,9 @@
 package org.example;
 
-import net.bytebuddy.asm.Advice;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -15,10 +12,10 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class CountTest {
-    public static  LoginPage loginPage;
-    public static  ProfilePage profilePage;
-    public static MessagePage messagePage;
-    public static WebDriver driver;
+    private static  LoginPage loginPage;
+    private static  ProfilePage profilePage;
+    private static MessagePage messagePage;
+    private static WebDriver driver;
     /**
      * осуществление первоначальной настройки
      */
