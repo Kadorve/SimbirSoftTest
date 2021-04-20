@@ -1,5 +1,6 @@
 package org.example;
 
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.Platform;
@@ -71,5 +72,10 @@ public class CountTest {
         messagePage.inputAmountSubject(ConfProperties.getProperty("amount"));
         //нажимаем кнопку для отправки письма
         messagePage.sendMsg();
+    }
+
+    @AfterClass
+    public static void quit() {
+        driver.quit();
     }
 }
