@@ -9,11 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class MessagePage {
+    private WebDriver driver;
     /**
      * конструктор класса, занимающийся инициализацией полей класса
      */
-    public WebDriver driver;
-
     public MessagePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;

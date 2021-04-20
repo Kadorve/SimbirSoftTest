@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+    private WebDriver driver;
     /**
      * конструктор класса, занимающийся инициализацией полей класса
      */
-    public WebDriver driver;
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;

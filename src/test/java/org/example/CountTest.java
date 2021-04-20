@@ -17,7 +17,7 @@ public class CountTest {
     private static MessagePage messagePage;
     private static WebDriver driver;
     /**
-     * осуществление первоначальной настройки
+     * Осуществление первоначальной настройки
      */
     @BeforeClass
     public static void setup() throws MalformedURLException {
